@@ -10,7 +10,12 @@ void main() {
           centerTitle: true,
           backgroundColor: Colors.indigo,
           title: Text('Abhishek Shrivastava'),
-        ),
+          actions: <Widget>[IconButton(icon: Icon(Icons.share), onPressed: printshare)
+          ,IconButton(icon: Icon(Icons.refresh), onPressed: printrefresh)],
+
+
+             ),
+
         body: //Center(child: Image(image:AssetImage('profile.jpg'))),
              Center(
                child:Column(
@@ -61,9 +66,18 @@ void main() {
              ),
       ),
 
-  ),);
+  ),
+  ); // Run App
 }
 void copyContent()
 {
   print("Copy was pressed");
+}
+void printshare()
+{
+  print("Share was pressed");
+}
+void printrefresh()
+{
+  print("refresh was pressed");
 }
